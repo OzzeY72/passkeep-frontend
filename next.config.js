@@ -1,4 +1,10 @@
 const nextConfig = {
+    reactStrictMode: true,
+    env: {
+        CLIENT_ID_PSASKEEP: process.env.CLIENT_ID_PSASKEEP,
+        CLIENT_SECRET_PASSKEEP: process.env.CLIENT_SECRET_PASSKEEP,
+        REDIRECT_URL_PASSKEEP: process.env.REDIRECT_URL_PASSKEEP,
+    },
     async headers() {
         return [
             {
